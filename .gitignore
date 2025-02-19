@@ -3,3 +3,4 @@ node_modules/
 .json
 uploads/
 iteru-80778-firebase-adminsdk-fve7c-68f94de707.json
+.vercel
