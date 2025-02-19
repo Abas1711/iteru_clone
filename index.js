@@ -1,28 +1,24 @@
 require("dotenv").config();
-const mongoose = require('mongoose');
 const express = require("express");
 const connectDB = require("./config/db");
 
-
-
+// إنشاء التطبيق
 const app = express();
 app.use(express.json());
 
-
+// الاتصال بقاعدة البيانات
 connectDB();
 
-
+// تعريف الراوتات
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/museums", require("./routes/museumRoutes"));
 app.use("/api/images", require("./routes/imageRoutes"));
+
+// تشغيل السيرفر
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`✅ Server running on port ${port}`);
 });
-console.log("MONGO_URI:", process.env.MONGO_URI);
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("Database connected successfully"))
-  .catch(err => console.log("DB Connection Error:", err));
 
-
-
+// التأكد من أن المتغير `MONGO_URI` محمّل بشكل صحيح
+console.log("🔍 MONGO_URI:", process.env.MONGO_URI);
