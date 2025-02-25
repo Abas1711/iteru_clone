@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Museum Map</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        iframe { width: 100%; height: 400px; max-width: 800px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    </style>
+</head>
+<body>
+    <h1>Select a Museum</h1>
+    <select id="museumSelect">
+        <option value="">-- Choose a Museum --</option>
+    </select>
+    <br><br>
+    <iframe id="museumMap" src="" frameborder="0" allowfullscreen loading="lazy"></iframe>
+
+    <script>
+        fetch("/api/museums") 
+            .then(response => response.json())
+            .then(data => {
+                const select = document.getElementById("museumSelect");
+                const iframe = document.getElementById("museumMap");
+
+                data.forEach(museum => {
+                    let option = document.createElement("option");
+                    option.value = museum.mapUrl;
+                    option.textContent = museum.name;
+                    select.appendChild(option);
+                });
+
+                select.addEventListener("change", function() {
+                    iframe.src = this.value;
+                });
+            })
+            .catch(error => console.error("Error loading museums:", error));
+    </script>
+</body>
+</html>
