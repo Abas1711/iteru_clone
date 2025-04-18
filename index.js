@@ -53,25 +53,36 @@ app.post("/api/messages", authenticate, async (req, res) => {
   }
 
   try {
+    // إضافة الرسالة الجديدة
     const message = await Message.create({
       userId,
       content,
       aiReply: "Waiting for AI response..."
     });
 
+    // استدعاء API الخاص بالـ AI للحصول على الرد
     const aiRes = await axios.post("https://web-production-65e38.up.railway.app/chat", {
       message: content
     });
 
     const aiReply = aiRes.data.response;
+
+    // تحديث الرسالة بالرد من الـ AI
     message.aiReply = aiReply;
     await message.save();
 
+    // استرجاع كل الرسائل
+    const allMessages = await Message.find();
+
+    // إرجاع الاستجابة مع الرسالة الجديدة وكل الرسائل القديمة
     res.json({
-      userId: message.userId,
-      content: message.content,
-      aiReply: message.aiReply,
-      createdAt: message.createdAt
+      newMessage: {
+        userId: message.userId,
+        content: message.content,
+        aiReply: message.aiReply,
+        createdAt: message.createdAt
+      },
+      allMessages
     });
   } catch (err) {
     console.error("Error from AI API:", err.message);
