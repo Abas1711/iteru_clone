@@ -90,6 +90,7 @@ app.post("/api/messages", authenticate, async (req, res) => {
   }
 });
 
+
 // ✅ GET كل الرسائل
 app.get("/api/messages", authenticate, async (req, res) => {
   try {
@@ -105,6 +106,29 @@ app.get("/api/messages", authenticate, async (req, res) => {
     res.status(500).json({ error: "Error fetching messages." });
   }
 });
+// ✅ DELETE رسالة
+app.delete("/api/messages/:id", authenticate, async (req, res) => {
+  const { id } = req.params;
+  const userId = req.user.userId;
+
+  try {
+    // دور على الرسالة وتأكد إنها بتاعت نفس اليوزر
+    const message = await Message.findOne({ _id: id, userId });
+
+    if (!message) {
+      return res.status(404).json({ error: "Message not found or unauthorized." });
+    }
+
+    // امسح الرسالة
+    await Message.deleteOne({ _id: id });
+
+    res.json({ message: "Message deleted successfully." });
+  } catch (err) {
+    console.error("Error deleting message:", err.message);
+    res.status(500).json({ error: "Error deleting message." });
+  }
+});
+
 
 // ✅ إضافة المسارات الجانبية
 app.use("/api/monuments", monumentRoutes);
