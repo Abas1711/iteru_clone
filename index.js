@@ -130,6 +130,24 @@ app.delete("/api/messages/:id", authenticate, async (req, res) => {
 });
 
 
+app.delete("/api/messages", authenticate, async (req, res) => {
+  const userId = req.user.userId;
+
+  try {
+    const result = await Message.deleteMany({ userId });
+
+    res.json({
+      message: "All your messages deleted successfully.",
+      deletedCount: result.deletedCount,
+    });
+  } catch (err) {
+    console.error("Error deleting messages:", err.message);
+    res.status(500).json({ error: "Failed to delete messages." });
+  }
+});
+
+
+
 // ✅ إضافة المسارات الجانبية
 app.use("/api/monuments", monumentRoutes);
 app.use("/api/museums", museumRoutes);
