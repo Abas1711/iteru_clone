@@ -130,7 +130,7 @@ app.delete("/api/messages/:id", authenticate, async (req, res) => {
 });
 
 
-app.delete("/api/messages", authenticate, async (req, res) => {
+app.delete("/api/Del_all_messages", authenticate, async (req, res) => {
   const userId = req.user.userId;
 
   try {
@@ -145,6 +145,7 @@ app.delete("/api/messages", authenticate, async (req, res) => {
     res.status(500).json({ error: "Failed to delete messages." });
   }
 });
+
 
 
 
