@@ -15,6 +15,7 @@ const monumentRoutes = require("./routes/monumentRoutes");
 const museumRoutes = require("./routes/museumRoutes");
 const authRoutes = require("./routes/authRoutes");
 const imageRoutes = require("./routes/imageRoutes");
+const testRoutes = require("./routes/testRoutes");  // إضافة المسار الجديد
 
 const app = express();
 app.use(cors());
@@ -154,6 +155,7 @@ app.use("/api/monuments", monumentRoutes);
 app.use("/api/museums", museumRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/images", imageRoutes);
+app.use("/api", testRoutes);  // ربط مسار الـ test
 
 // ✅ نقطة اختبار
 app.get("/", (req, res) => res.json({ message: "🚀 API is running" }));
