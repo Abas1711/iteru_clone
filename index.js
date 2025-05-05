@@ -61,7 +61,7 @@ app.post("/api/messages", authenticate, async (req, res) => {
     });
 
     // استدعاء API الخاص بالـ AI للحصول على الرد
-    const aiRes = await axios.post("https://web-production-65e38.up.railway.app/chat", {
+    const aiRes = await axios.post("https://web-production-7de92.up.railway.app/chat", {
       message: content
     });
 
