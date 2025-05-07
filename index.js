@@ -4,18 +4,18 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const axios = require("axios");
 
-const connectDB = require("./config/db"); // لو عندك ملف خاص
+const connectDB = require("./config/db");
 const Museum = require("./models/Museum");
 const museumsData = require("./data/museumsData.json");
-const Message = require("./models/Message"); // موديل الرسائل
-const authenticate = require("./middlewares/authMiddleware"); // ميدل وير JWT
+const Message = require("./models/Message");
+const authenticate = require("./middlewares/authMiddleware");
 
 // المسارات
 const monumentRoutes = require("./routes/monumentRoutes");
 const museumRoutes = require("./routes/museumRoutes");
 const authRoutes = require("./routes/authRoutes");
 const imageRoutes = require("./routes/imageRoutes");
-const testRoutes = require("./routes/testRoutes");  // إضافة المسار الجديد
+const weatherRoutes = require("./routes/weatherRoutes"); // ✅ تمت إضافته
 
 const app = express();
 app.use(cors());
@@ -54,28 +54,23 @@ app.post("/api/messages", authenticate, async (req, res) => {
   }
 
   try {
-    // إضافة الرسالة الجديدة
     const message = await Message.create({
       userId,
       content,
       aiReply: "Waiting for AI response..."
     });
 
-    // استدعاء API الخاص بالـ AI للحصول على الرد
-    const aiRes = await axios.post("https://web-production-7de92.up.railway.app/chat", {
+    const aiRes = await axios.post("https://web-production-65e38.up.railway.app/chat", {
       message: content
     });
 
     const aiReply = aiRes.data.response;
 
-    // تحديث الرسالة بالرد من الـ AI
     message.aiReply = aiReply;
     await message.save();
 
-    // استرجاع كل الرسائل
     const allMessages = await Message.find();
 
-    // إرجاع الاستجابة مع الرسالة الجديدة وكل الرسائل القديمة
     res.json({
       newMessage: {
         userId: message.userId,
@@ -91,12 +86,10 @@ app.post("/api/messages", authenticate, async (req, res) => {
   }
 });
 
-
 // ✅ GET كل الرسائل
 app.get("/api/messages", authenticate, async (req, res) => {
   try {
     const messages = await Message.find({ userId: req.user.userId }).lean();
-
     const cleanedMessages = messages.map(msg => {
       const { __v, ...rest } = msg;
       return rest;
@@ -107,20 +100,19 @@ app.get("/api/messages", authenticate, async (req, res) => {
     res.status(500).json({ error: "Error fetching messages." });
   }
 });
+
 // ✅ DELETE رسالة
 app.delete("/api/messages/:id", authenticate, async (req, res) => {
   const { id } = req.params;
   const userId = req.user.userId;
 
   try {
-    // دور على الرسالة وتأكد إنها بتاعت نفس اليوزر
     const message = await Message.findOne({ _id: id, userId });
 
     if (!message) {
       return res.status(404).json({ error: "Message not found or unauthorized." });
     }
 
-    // امسح الرسالة
     await Message.deleteOne({ _id: id });
 
     res.json({ message: "Message deleted successfully." });
@@ -130,32 +122,12 @@ app.delete("/api/messages/:id", authenticate, async (req, res) => {
   }
 });
 
-
-app.delete("/api/Del_all_messages", authenticate, async (req, res) => {
-  const userId = req.user.userId;
-
-  try {
-    const result = await Message.deleteMany({ userId });
-
-    res.json({
-      message: "All your messages deleted successfully.",
-      deletedCount: result.deletedCount,
-    });
-  } catch (err) {
-    console.error("Error deleting messages:", err.message);
-    res.status(500).json({ error: "Failed to delete messages." });
-  }
-});
-
-
-
-
-// ✅ إضافة المسارات الجانبية
+// ✅ ربط المسارات
 app.use("/api/monuments", monumentRoutes);
 app.use("/api/museums", museumRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/images", imageRoutes);
-app.use("/api", testRoutes);  // ربط مسار الـ test
+app.use("/api", weatherRoutes); // ✅ أضفنا مسار الطقس والمتاحف
 
 // ✅ نقطة اختبار
 app.get("/", (req, res) => res.json({ message: "🚀 API is running" }));
