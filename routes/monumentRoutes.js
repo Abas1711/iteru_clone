@@ -37,8 +37,8 @@ const cityMap = {
   "Taba": "Taba"
 };
 
-// دالة retry للطقس
-const fetchWeatherWithRetry = async (city, retries = 10, delay = 1000) => {
+// دالة retry للطقس بدون delay
+const fetchWeatherWithRetry = async (city, retries = 5) => {
   for (let i = 0; i < retries; i++) {
     try {
       const res = await axios.get('https://api.weatherapi.com/v1/current.json', {
@@ -56,8 +56,6 @@ const fetchWeatherWithRetry = async (city, retries = 10, delay = 1000) => {
     } catch (err) {
       console.log(`❌ Error on attempt ${i + 1} for ${city}:`, err.message);
     }
-
-    await new Promise((resolve) => setTimeout(resolve, delay));
   }
 
   return null;
