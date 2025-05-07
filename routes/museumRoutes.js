@@ -35,7 +35,7 @@ const cityMap = {
   "Taba": "Taba"
 };
 
-const fetchWeatherWithRetry = async (city, retries = 10) => {
+const fetchWeatherWithRetry = async (city, retries = 5) => {
   for (let i = 0; i < retries; i++) {
     try {
       const res = await axios.get('https://api.weatherapi.com/v1/current.json', {
