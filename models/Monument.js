@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
 
 const MuseumSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  location: { type: String, required: true },
-  description: { type: String, required: true },
-  opening_hours: { type: String, required: true },
-  closing_hours: { type: String, required: true },
+  name: { type: String, required: false },
+  location: { type: String, required: false },
+  description: { type: String, required: false },
+  opening_hours: {
+    type: Object,
+    required: false
+  }
+,  
+  closing_hours: { type: String, required: false },
   ticket_prices: {
     adult: { type: String, default : null },
     child: { type: String, default : null },
@@ -20,7 +24,7 @@ const MuseumSchema = new mongoose.Schema({
   },
   images: { type: [String], required: false },
   coverPicture: { type: String, required: false },
-  last_ticket_time: { type: String, required: true },
+  last_ticket_time: { type: String, required: false },
   map_embed: { type: String, required: false },
 },
 {
@@ -31,6 +35,6 @@ toJSON: {
 }
 });
 
-const Museum = mongoose.model("Monuments", MuseumSchema);
+const Monument = mongoose.model("Monuments", MuseumSchema);
 
-module.exports = Museum;
+module.exports = Monument;
