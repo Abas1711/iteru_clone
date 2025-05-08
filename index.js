@@ -5,23 +5,32 @@ const mongoose = require("mongoose");
 const axios = require("axios");
 
 const connectDB = require("./config/db");
+
+// نماذج البيانات
 const Museum = require("./models/Museum");
-const museumsData = require("./data/museumsData.json");
+const Monument = require("./models/Monument");
 const Message = require("./models/Message");
+
+// بيانات المتاحف والآثار
+const museumsData = require("./data/museumsData.json");
+const monumentsData = require("./data/monumentsData.json");
+
+// ميدلوير التحقق
 const authenticate = require("./middlewares/authMiddleware");
 
 // المسارات
+const testRoutes = require("./routes/testRoutes"); // ✅ ضيف السطر ده فوق
 const monumentRoutes = require("./routes/monumentRoutes");
 const museumRoutes = require("./routes/museumRoutes");
 const authRoutes = require("./routes/authRoutes");
 const imageRoutes = require("./routes/imageRoutes");
-const weatherRoutes = require("./routes/weatherRoutes"); // ✅ تمت إضافته
+const weatherRoutes = require("./routes/weatherRoutes");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ اتصال قاعدة البيانات
+// ✅ اتصال بقاعدة البيانات وتشغيل seed
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/yourDB";
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
@@ -29,6 +38,7 @@ mongoose.connect(MONGO_URI, {
 }).then(() => {
   console.log("✅ Connected to MongoDB...");
   seedMuseums();
+  seedMonuments();
 }).catch((err) => {
   console.error("❌ MongoDB connection error:", err);
 });
@@ -44,7 +54,18 @@ async function seedMuseums() {
   }
 }
 
-// ✅ POST رسالة مع AI
+// ✅ دالة إدخال الآثار
+async function seedMonuments() {
+  try {
+    await Monument.deleteMany();
+    await Monument.insertMany(monumentsData);
+    console.log("✅ Monuments data inserted successfully!");
+  } catch (err) {
+    console.error("❌ Error inserting monuments data:", err);
+  }
+}
+
+// ✅ POST رسالة AI
 app.post("/api/messages", authenticate, async (req, res) => {
   const { content } = req.body;
   const userId = req.user.userId;
@@ -81,7 +102,7 @@ app.post("/api/messages", authenticate, async (req, res) => {
       allMessages
     });
   } catch (err) {
-    console.error("Error from AI API:", err.message);
+    console.error("❌ Error from AI API:", err.message);
     res.status(500).json({ error: "Something went wrong with the AI." });
   }
 });
@@ -117,7 +138,7 @@ app.delete("/api/messages/:id", authenticate, async (req, res) => {
 
     res.json({ message: "Message deleted successfully." });
   } catch (err) {
-    console.error("Error deleting message:", err.message);
+    console.error("❌ Error deleting message:", err.message);
     res.status(500).json({ error: "Error deleting message." });
   }
 });
@@ -127,8 +148,8 @@ app.use("/api/monuments", monumentRoutes);
 app.use("/api/museums", museumRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/images", imageRoutes);
-app.use("/api", weatherRoutes); // ✅ أضفنا مسار الطقس والمتاحف
-
+app.use("/api", weatherRoutes); // تحتوي على /museums-with-weather و /monuments-with-weather
+app.use("/api", testRoutes);
 // ✅ نقطة اختبار
 app.get("/", (req, res) => res.json({ message: "🚀 API is running" }));
 

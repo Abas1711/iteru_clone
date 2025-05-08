@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 const Museum = require("../models/Museum");
+const Monument = require("../models/Monument");
+
 const WEATHER_API_KEY = '7c93a381c9bf4f6c876164839250505';
 
 // خريطة المحافظات للمدن
@@ -35,7 +37,7 @@ const cityMap = {
   "Taba": "Taba"
 };
 
-// جلب بيانات الطقس من API
+// دالة جلب الطقس
 const fetchWeather = async (city) => {
   try {
     const res = await axios.get('http://api.weatherapi.com/v1/current.json', {
@@ -45,6 +47,8 @@ const fetchWeather = async (city) => {
       }
     });
 
+    console.log("Weather data for", city, ":", res.data);  // سجل البيانات المرسلة من API الطقس
+
     if (res.data && res.data.current) {
       return {
         temp_c: res.data.current.temp_c,
@@ -53,14 +57,15 @@ const fetchWeather = async (city) => {
         humidity: res.data.current.humidity
       };
     }
+
     return null;
   } catch (err) {
-    console.error(`Error fetching weather for ${city}:`, err.message);
+    console.error(`❌ Error fetching weather for ${city}:`, err.message);
     return null;
   }
 };
 
-// تنفيذ الطلبات على دفعات
+// دالة دفعات
 const processInBatches = async (items, batchSize, handler) => {
   const results = [];
   for (let i = 0; i < items.length; i += batchSize) {
@@ -71,10 +76,11 @@ const processInBatches = async (items, batchSize, handler) => {
   return results;
 };
 
-// دمج بيانات المتاحف مع الطقس
+// ✅ المتاحف مع الطقس
 router.get("/museums-with-weather", async (req, res) => {
   try {
     const museums = await Museum.find();
+    console.log("📦 Found museums:", museums.length);
 
     if (!museums.length) {
       return res.status(404).json({ success: false, message: "No museums found" });
@@ -82,7 +88,11 @@ router.get("/museums-with-weather", async (req, res) => {
 
     const results = await processInBatches(museums, 5, async (museum) => {
       const governorate = museum.governorate || museum.city;
+      console.log("Governorate/City:", governorate);  // سجل المدينة أو المحافظة التي يتم إرسالها
+
       const city = cityMap[governorate] || governorate || "Cairo";
+      console.log("Resolved city:", city);  // سجل المدينة المحسوبة
+     
       const weather = await fetchWeather(city);
 
       return {
@@ -93,7 +103,39 @@ router.get("/museums-with-weather", async (req, res) => {
 
     res.status(200).json({ success: true, data: results });
   } catch (err) {
-    console.error("Error fetching museums with weather:", err);
+    console.error("❌ Error fetching museums with weather:", err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+});
+
+// ✅ الآثار مع الطقس
+router.get("/monuments-with-weather", async (req, res) => {
+  try {
+    const monuments = await Monument.find();
+    console.log("📦 Found monuments:", monuments.length); // ✅ هنا هتشوف عددهم
+
+    if (!monuments.length) {
+      return res.status(404).json({ success: false, message: "No monuments found" });
+    }
+
+    const results = await processInBatches(monuments, 5, async (monument) => {
+      const governorate = monument.governorate || monument.city;
+      console.log("Governorate/City:", governorate);  // سجل المدينة أو المحافظة التي يتم إرسالها
+
+      const city = cityMap[governorate] || governorate || "Cairo";
+      console.log("Resolved city:", city);  // سجل المدينة المحسوبة
+     
+      const weather = await fetchWeather(city);
+
+      return {
+        ...monument.toObject(),
+        weather: weather || "No weather data"
+      };
+    });
+
+    res.status(200).json({ success: true, data: results });
+  } catch (err) {
+    console.error("❌ Error fetching monuments with weather:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
