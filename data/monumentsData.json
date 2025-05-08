@@ -17,15 +17,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insiderTips": {
     "freeEntryPolicy": [
@@ -55,6 +57,9 @@
     "googleMapsUrl": "https://maps.app.goo.gl/hBF4uedxA45PAtjM8",
     "embedMap": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.927189618707!2d30.709473378960713!3d27.409200877632216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1444e5109c3f81d5%3A0xf79973124c0482a1!2sMeir%20Monumental%20Tombs!5e0!3m2!1sen!2seg!4v1738103352327!5m2!1sen!2seg\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
+
+
+    
     {
     "name": "The Pyramids Of Meidum",
     "location": "Beni Suef",
@@ -73,16 +78,19 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 150",
-    "student": "EGP 75"
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
-    },
+
     "insiderTips": {
     "freeEntryPolicy": [
     "Free entry for children below 6 years.",
@@ -127,16 +135,19 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
-    },
+
     "insiderTips": {
     "freeEntryPolicy": [
     "Free entry for children below 6 years.",
@@ -185,15 +196,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insiderTips": {
     "freeEntryPolicy": [
@@ -244,15 +257,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -299,15 +314,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -353,15 +370,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -416,15 +435,18 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 260",
-    "student": "EGP 130"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
+    
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -478,15 +500,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 150",
-    "student": "EGP 75"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -538,15 +562,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 150",
-    "student": "EGP 75"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -595,15 +621,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 120",
-    "student": "EGP 60"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -648,15 +676,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    },
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -702,15 +732,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 30",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -758,15 +790,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -811,15 +845,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 20",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -866,15 +902,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 20",
-    "student": "EGP 5"
-    },
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -922,29 +960,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "standard": {
-    "egyptians_arabs": {
-    "adult": "EGP 30",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 750",
-    "student": "EGP 375"
-    }
-    },
-    "sun_alignment": {
-    "february_22_october_22": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 1200",
-    "student": "EGP 600"
-    }
-    }
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -993,15 +1019,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 40",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 550",
-    "student": "EGP 275"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1049,15 +1077,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 40",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 450",
-    "student": "EGP 225"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1105,15 +1135,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    },
-    "foreigner": {
-    "adult": "EGP 150",
-    "student": "EGP 75"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1161,15 +1193,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    },
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1220,15 +1254,17 @@
     },
     "all_days": "Open every day"
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 220",
-    "student": "EGP 110"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1273,15 +1309,17 @@
     "to": "03:40 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 220",
-    "student": "EGP 110"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1328,15 +1366,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 550",
-    "student": "EGP 275"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1383,15 +1423,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 550",
-    "student": "EGP 275"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1438,15 +1480,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    },
-    "foreigner": {
-    "adult": "EGP 200",
-    "student": "EGP 100"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1492,15 +1536,17 @@
     "to": "03:30 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 700",
-    "student": "EGP 350"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1547,15 +1593,17 @@
     "to": "03:30 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 30",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 600",
-    "student": "EGP 300"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1609,15 +1657,17 @@
     "Tuesday"
     ]
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 20",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 300",
-    "student": "EGP 150"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1662,15 +1712,17 @@
     "to": "04:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 40",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 440",
-    "student": "EGP 220"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1717,15 +1769,17 @@
     "to": "04:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 40",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 600",
-    "student": "EGP 300"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1771,15 +1825,17 @@
     "to": "07:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 40",
-    "student": "EGP 20"
-    },
-    "foreigner": {
-    "adult": "EGP 500",
-    "student": "EGP 250"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1826,15 +1882,17 @@
     "to": "04:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 60",
-    "student": "EGP 30"
-    },
-    "foreigner": {
-    "adult": "EGP 750",
-    "student": "EGP 375"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1881,15 +1939,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 20",
-    "student": "EGP 10"
-    },
-    "foreigner": {
-    "adult": "EGP 300",
-    "student": "EGP 150"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
@@ -1936,15 +1996,17 @@
     "to": "03:00 PM"
     }
     },
-    "tickets": {
-    "egyptians_arabs": {
-    "adult": "EGP 10",
-    "student": "EGP 5"
-    },
-    "foreigner": {
-    "adult": "EGP 100",
-    "student": "EGP 50"
-    }
+    "ticket_prices": {
+        "adult": "100 EGP",
+        "child": "50 EGP",
+        "student": "70 EGP",
+        "senior": "Free",
+        "foreign_adult": "200 EGP",
+        "foreign_student": "150 EGP",
+        "egyptian_adult": "80 EGP",
+        "egyptian_student": "40 EGP",
+        "egyptian_arabs": "60 EGP",
+        "foreigners": null
     },
     "insider_tips": {
     "free_entry_policy": [
