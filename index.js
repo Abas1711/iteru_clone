@@ -142,6 +142,25 @@ app.delete("/api/messages/:id", authenticate, async (req, res) => {
     res.status(500).json({ error: "Error deleting message." });
   }
 });
+// ✅ DELETE: حذف جميع الرسائل الخاصة بالمستخدم الحالي
+app.delete("/api/Del_all_messages", authenticate, async (req, res) => {
+  const userId = req.user.userId;
+
+  try {
+    const result = await Message.deleteMany({ userId });
+
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ message: "No messages found to delete." });
+    }
+
+    res.json({
+      message: `${result.deletedCount} message(s) deleted successfully.`
+    });
+  } catch (err) {
+    console.error("❌ Error deleting all messages:", err.message);
+    res.status(500).json({ error: "Error deleting messages." });
+  }
+});
 
 // ✅ ربط المسارات
 app.use("/api/monuments", monumentRoutes);
