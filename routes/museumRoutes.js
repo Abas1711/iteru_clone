@@ -2,35 +2,40 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const path = require("path");
+const mongoose = require("mongoose");
+const Museum = require("../models/Museum");  // تأكد من أنك استوردت النموذج
 
-// تعريف مسار الملف الذي يحتوي على البيانات
+// مسار الملف الذي يحتوي على بيانات المتاحف
 const filePath = path.join(__dirname, "../data/museumsData.json");
 
-router.get("/", (req, res) => {
-  // قراءة البيانات من الملف
-  fs.readFile(filePath, "utf8", (err, data) => {
-    if (err) {
-      return res.status(500).json({
-        success: false,
-        message: "Error reading file",
-        error: err,
-      });
-    }
+router.get("/", async (req, res) => {
+  try {
+    // قراءة البيانات من الملف
+    const rawData = fs.readFileSync(filePath, "utf8");
+    const museums = JSON.parse(rawData);
 
-    try {
-      // تحويل البيانات من JSON إلى كائن JavaScript
-      const museums = JSON.parse(data);
-      res.status(200).json({
-        data: museums,
-      });
-    } catch (parseError) {
-      res.status(500).json({
-        success: false,
-        message: "Error parsing JSON data",
-        error: parseError,
-      });
-    }
-  });
+    // إضافة _id لكل متحف باستخدام mongoose.Types.ObjectId()
+    const museumsWithIds = museums.map(museum => ({
+      ...museum,
+      _id: new mongoose.Types.ObjectId(),  // توليد ObjectId بشكل صحيح
+    }));
+
+    // إدخال المتاحف إلى قاعدة البيانات
+    await Museum.insertMany(museumsWithIds); 
+
+    res.status(200).json({
+      success: true,
+      message: "Museums added successfully!",
+      data: museumsWithIds,
+    });
+  } catch (error) {
+    console.error("Error adding museums:", error);
+    res.status(500).json({
+      success: false,
+      message: "Error adding museums to the database.",
+      error: error.message,
+    });
+  }
 });
 
 module.exports = router;
