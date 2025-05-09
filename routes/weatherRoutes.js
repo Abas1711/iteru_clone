@@ -92,10 +92,14 @@ router.get("/museums-with-weather", async (req, res) => {
 
       const weather = await fetchWeather(location);
 
-      return {
-        ...museum.toObject(),
-        weather: weather || "No weather data"
-      };
+const data = museum.toObject();
+delete data.__v;
+
+return {
+  ...data,
+  weather: weather || "No weather data"
+};
+
     });
 
     res.status(200).json({ success: true, data: results });
@@ -121,10 +125,14 @@ router.get("/monuments-with-weather", async (req, res) => {
 
       const weather = await fetchWeather(location);
 
-      return {
-        ...monument.toObject(),
-        weather: weather || "No weather data"
-      };
+const data = monument.toObject();
+delete data.__v;
+
+return {
+  ...data,
+  weather: weather || "No weather data"
+};
+
     });
 
     res.status(200).json({ success: true, data: results });
