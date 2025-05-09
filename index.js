@@ -19,6 +19,8 @@ const monumentsData = require("./data/monumentsData.json");
 const authenticate = require("./middlewares/authMiddleware");
 
 // المسارات
+const monumentWeatherRoutes = require("./routes/monumentWeather");
+const museumWeatherRoutes = require("./routes/museumweather");  // تأكد من المسار الصحيح
 const testRoutes = require("./routes/testRoutes"); // ✅ ضيف السطر ده فوق
 const monumentRoutes = require("./routes/monumentRoutes");
 const museumRoutes = require("./routes/museumRoutes");
@@ -29,6 +31,10 @@ const weatherRoutes = require("./routes/weatherRoutes");
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use("/api", museumWeatherRoutes);  // ربط المسار الجديد هنا
+app.use("/api", monumentWeatherRoutes);  // ربط مسار الطقس للآثار
+
+
 
 // ✅ اتصال بقاعدة البيانات وتشغيل seed
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/yourDB";
