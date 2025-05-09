@@ -47,7 +47,7 @@ const fetchWeather = async (city) => {
       }
     });
 
-    console.log("Weather data for", city, ":", res.data);  // سجل البيانات المرسلة من API الطقس
+    console.log("Weather data for", city, ":", res.data);
 
     if (res.data && res.data.current) {
       return {
@@ -87,13 +87,10 @@ router.get("/museums-with-weather", async (req, res) => {
     }
 
     const results = await processInBatches(museums, 5, async (museum) => {
-      const governorate = museum.governorate || museum.city;
-      console.log("Governorate/City:", governorate);  // سجل المدينة أو المحافظة التي يتم إرسالها
+      const location = museum.location || "Cairo";  // استخدام location بدلاً من governorate أو city
+      console.log("🏛️ Museum:", museum.name, "| Location used:", location);
 
-      const city = cityMap[governorate] || governorate || "Cairo";
-      console.log("Resolved city:", city);  // سجل المدينة المحسوبة
-     
-      const weather = await fetchWeather(city);
+      const weather = await fetchWeather(location);
 
       return {
         ...museum.toObject(),
@@ -112,20 +109,17 @@ router.get("/museums-with-weather", async (req, res) => {
 router.get("/monuments-with-weather", async (req, res) => {
   try {
     const monuments = await Monument.find();
-    console.log("📦 Found monuments:", monuments.length); // ✅ هنا هتشوف عددهم
+    console.log("📦 Found monuments:", monuments.length);
 
     if (!monuments.length) {
       return res.status(404).json({ success: false, message: "No monuments found" });
     }
 
     const results = await processInBatches(monuments, 5, async (monument) => {
-      const governorate = monument.governorate || monument.city;
-      console.log("Governorate/City:", governorate);  // سجل المدينة أو المحافظة التي يتم إرسالها
+      const location = monument.location || "Cairo";  // استخدام location بدلاً من governorate أو city
+      console.log("🏛️ Monument:", monument.name, "| Location used:", location);
 
-      const city = cityMap[governorate] || governorate || "Cairo";
-      console.log("Resolved city:", city);  // سجل المدينة المحسوبة
-     
-      const weather = await fetchWeather(city);
+      const weather = await fetchWeather(location);
 
       return {
         ...monument.toObject(),
