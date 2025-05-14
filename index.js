@@ -27,14 +27,18 @@ const museumRoutes = require("./routes/museumRoutes");
 const authRoutes = require("./routes/authRoutes");
 const imageRoutes = require("./routes/imageRoutes");
 const weatherRoutes = require("./routes/weatherRoutes");
+const recommendationRoute = require("./routes/recommendationRoute");
+const bodyParser = require('body-parser');  // لمعالجة البيانات الواردة (مثل JSON و x-www-form-urlencoded)
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api", museumWeatherRoutes);  // ربط المسار الجديد هنا
 app.use("/api", monumentWeatherRoutes);  // ربط مسار الطقس للآثار
-
-
+app.use("/api/recommend", recommendationRoute);
+app.use(bodyParser.json());  // لتحليل JSON requests
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/recommend', recommendationRoute);  // ربط router الخاص بـ /recommend
 
 // ✅ اتصال بقاعدة البيانات وتشغيل seed
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/yourDB";
