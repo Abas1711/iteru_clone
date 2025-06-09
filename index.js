@@ -29,6 +29,7 @@ const imageRoutes = require("./routes/imageRoutes");
 const weatherRoutes = require("./routes/weatherRoutes");
 const recommendationRoute = require("./routes/recommendationRoute");
 const bodyParser = require('body-parser');  // لمعالجة البيانات الواردة (مثل JSON و x-www-form-urlencoded)
+const predictRoute = require('./routes/predict');
 
 const app = express();
 app.use(cors());
@@ -39,6 +40,7 @@ app.use("/api/recommend", recommendationRoute);
 app.use(bodyParser.json());  // لتحليل JSON requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/recommend', recommendationRoute);  // ربط router الخاص بـ /recommend
+app.use('/api', predictRoute);
 
 // ✅ اتصال بقاعدة البيانات وتشغيل seed
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/yourDB";
