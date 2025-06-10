@@ -93,7 +93,7 @@ app.post("/api/messages", authenticate, async (req, res) => {
       aiReply: "Waiting for AI response..."
     });
 
-    const aiRes = await axios.post("http://web-production-52e43.up.railway.app/chat", {
+    const aiRes = await axios.post("https://f445-102-188-51-188.ngrok-free.app/chat", {
       message: content
     });
  
