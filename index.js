@@ -10,6 +10,7 @@ const connectDB = require("./config/db");
 const Museum = require("./models/Museum");
 const Monument = require("./models/Monument");
 const Message = require("./models/Message");
+const hotelRoutes = require("./routes/hotelRoutes");
 
 // بيانات المتاحف والآثار
 const museumsData = require("./data/museumsData.json");
@@ -41,6 +42,7 @@ app.use(bodyParser.json());  // لتحليل JSON requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/recommend', recommendationRoute);  // ربط router الخاص بـ /recommend
 app.use('/api', predictRoute);
+app.use("/api/hotels", hotelRoutes);
 
 // ✅ اتصال بقاعدة البيانات وتشغيل seed
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/yourDB";
