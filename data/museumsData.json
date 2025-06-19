@@ -37,18 +37,15 @@
 "foreigners": "5$"
 },
 "images": [
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509425/museums/1739509414029-2.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509468/museums/1739509414877-cap201.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509513/museums/1739509457263-cap341.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509599/museums/1739509502286-cap371.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509624/museums/1739509588286-cap401.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739511306/museums/1739511268446-whatsapp-image-2020-10-19-at-82802-pm.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739511723/museums/1739511656944-whatsapp-image-2020-10-19-at-828034-pm.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739511740/museums/1739511714174-whatsapp-image-2021-05-08-at-153109.png.png"
-
-
-],
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739509419/museums/1739509407971-whatsapp-image-2021-05-08-at-153053.png.png" ,
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304286/museums/1750304282423-2.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304293/museums/1750304282731-cap201.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304308/museums/1750304291768-cap341.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304325/museums/1750304317890-cap401.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304335/museums/1750304323844-whatsapp-image-2020-10-19-at-82802-pm.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304334/museums/1750304330351-whatsapp-image-2021-05-08-at-153053.png"
+]
+,
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750304288/museums/1750304271306-whatsapp-image-2020-10-19-at-828034-pm.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441827.0086854651!2d31.087768843214384!3d30.100672396741064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458172d904d2e3b%3A0xb7313122381687b4!2sCairo%20International%20Airport%20Museum!5e0!3m2!1sen!2seg!4v1738850754101!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 
@@ -467,15 +464,12 @@
 "egyptian_adult":"30 EGP",
 "egyptian_student":"10 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613490/museums/1739613489982-60-162631-nubianmusuem_700x400.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613490/museums/1739613491769-el-kurru_king_taharqa_xxv_dynasty.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613492/museums/1739613492007-n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613493/museums/1739613493740-nubia_museum_-8611293931.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613494/museums/1739613494254-%D9%82%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%B1%D8%A7%D9%85%D8%A7.png.png"
-
-
-
+"images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750308933/museums/1750308929192-60-162631-nubianmusuem_700x400.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750308937/museums/1750308931516-el-kurru_king_taharqa_xxv_dynasty.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750308939/museums/1750308934395-n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750308944/museums/1750308937006-nubia_museum_-8611293931.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750308947/museums/1750308939801-%D9%82%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%B1%D8%A7%D9%85%D8%A7.png"
 ],
 
 "coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613488/museums/1739613487337-aswan_nubian_museum_entrance.png.png",
@@ -496,19 +490,16 @@
 "egyptian_adult":"20 EGP",
 "egyptian_student":"5 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613576/museums/1739613574786-4.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613578/museums/1739613577684-4-copy.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613578/museums/1739613579624-7.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613580/museums/1739613579886-16.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613581/museums/1739613581514-f7-03-12l.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613582/museums/1739613582736-golden-bracelet-fawzeya-ahmed-foad.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613582/museums/1739613583056-oil-painting-of-zenab-hanem-fahmy.png.png"
-
-
+"images": [
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309299/museums/1750309292643-4.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309305/museums/1750309296586-4-copy.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309307/museums/1750309303531-7.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309312/museums/1750309305379-16.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309319/museums/1750309309357-f7-03-12l.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309324/museums/1750309317944-golden-bracelet-fawzeya-ahmed-foad.png",
+    "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309325/museums/1750309320280-oil-painting-of-zenab-hanem-fahmy.png"
 ],
-
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613573/museums/1739613572615-01-1.png.png",
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309296/museums/1750309291109-01-1.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2820617252632!2d29.960709875057915!3d31.24061416091135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5293b29f3cb%3A0xf790955947954877!2sRoyal%20Jewelry%20Museum%2C%20Alexandria!5e0!3m2!1sen!2seg!4v1738851429190!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 },
@@ -525,16 +516,14 @@
 "egyptian_adult":"40 EGP",
 "egyptian_student":"20 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613673/museums/1739613673108-fdfh.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613687/museums/1739613674340-sh42c.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613689/museums/1739613687844-sh612.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613691/museums/1739613689652-sh632.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613690/museums/1739613691022-sh8312.png.png"
-
+"images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309517/museums/1750309509824-fdfh.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309559/museums/1750309513639-sh42c.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309558/museums/1750309552214-sh612.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309559/museums/1750309552738-sh632.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309558/museums/1750309553179-sh8312.png"
 ],
-
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613672/museums/1739613671009-s.png.png",
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309512/museums/1750309508139-s.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.0102880677127!2d34.34086807909695!3d27.93232985381168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1453379dede99f63%3A0xe6401eff7e5a4c60!2sSharm%20El-Sheikh%20Museum!5e0!3m2!1sen!2seg!4v1738851447416!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 },
@@ -551,16 +540,15 @@
 "egyptian_adult":"20 EGP",
 "egyptian_student":"10 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613758/museums/1739613758961-22.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613758/museums/1739613758965-33.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613760/museums/1739613759775-55.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613760/museums/1739613760818-77.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613760/museums/1739613761043-88.png.png"
-
+"images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309794/museums/1750309792693-22.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309798/museums/1750309792695-33.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309798/museums/1750309793892-55.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309799/museums/1750309794669-77.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309799/museums/1750309796962-88.png"
 ],
 
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613757/museums/1739613757169-120344479_2826310660930048_1973008236049013341_n.png.png",
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309793/museums/1750309791444-120344479_2826310660930048_1973008236049013341_n.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4110.916452939938!2d32.564431394056335!3d29.954851751268382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456250e1595d9b9%3A0xe90a0e698784614d!2sSuez%20National%20Museum!5e0!3m2!1sen!2seg!4v1738851465433!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 },
@@ -578,18 +566,16 @@
 "egyptian_adult":"20 EGP",
 "egyptian_student":"10 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613843/museums/1739613842044-733.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613848/museums/1739613844825-3733.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613849/museums/1739613849256-a3733.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613853/museums/1739613850766-g75a3382.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613855/museums/1739613854530-g75a3741.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613856/museums/1739613856346-image9.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613858/museums/1739613857032-t.png.png"
-
+"images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309887/museums/1750309876761-733.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309909/museums/1750309885973-3733.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309916/museums/1750309907878-a3733.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309938/museums/1750309915061-g75a3382.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309950/museums/1750309937196-g75a3741.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309959/museums/1750309948679-image9.png"
 ],
 
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613840/museums/1739613840356-g75a3721.png.png",
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750309877/museums/1750309874978-g75a3721.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.083136691809!2d31.227822275008943!3d30.005769120403045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847105643425d%3A0x5c7b299fa692161a!2sCoptic%20Museum!5e0!3m2!1sen!2seg!4v1738851479133!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 },
@@ -606,20 +592,17 @@
 "egyptian_adult":"30 EGP",
 "egyptian_student":"10 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613935/museums/1739613930472-cg_3-cg_4_dsc_0154.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613935/museums/1739613936308-el-faiyum.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613936/museums/1739613936310-khasekhemwy.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613936/museums/1739613936313-mask-of-thuiu_test2.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613937/museums/1739613937081-ramses-ii-as-a-child.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613937/museums/1739613937454-seated-scribe.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615480/museums/1739615480483-tumblr_p0crazh0yw1wna6v8o1_640.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615481/museums/1739615481901-userkaf.png.png"
-
-
+"images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310132/museums/1750310106610-cg_3-cg_4_dsc_0154.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310139/museums/1750310130965-el-faiyum.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310136/museums/1750310131397-khasekhemwy.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310137/museums/1750310132786-mask-of-thuiu_test2.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310137/museums/1750310133278-ramses-ii-as-a-child.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310136/museums/1750310133638-seated-scribe.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310138/museums/1750310134264-userkaf.png"
 ],
 
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739613929/museums/1739613929048-97077059_3068911796487783_4196097307759869952_n.png.png",
+"coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310108/museums/1750310105501-97077059_3068911796487783_4196097307759869952_n.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.600356773773!2d31.22879647967257!3d30.048321253744618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458b14d72adf029%3A0x9a38f9bbb6edbfe4!2sThe%20Egyptian%20Museum%20in%20Cairo!5e0!3m2!1sen!2seg!4v1738851496905!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 },
@@ -636,19 +619,16 @@
 "egyptian_adult":"30 EGP",
 "egyptian_student":"10 EGP"
 },
-"images":[
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615547/museums/1739615544075-2.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615548/museums/1739615548027-9.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615550/museums/1739615548887-117791294_3328774210501539_1773992541902405528_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615550/museums/1739615550840-117975650_3328774580501502_1046828123410114893_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615552/museums/1739615551092-118075663_3328774377168189_4445003798279563070_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615553/museums/1739615553128-118151046_3328774543834839_8985846229408344495_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615553/museums/1739615553554-118232893_3328773797168247_1919729880245841948_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615556/museums/1739615554581-118308865_3328774043834889_3882990292913049812_n.png.png",
-"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615556/museums/1739615556826-r.png.png"
+ "images": [
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310287/museums/1750310278991-2.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310294/museums/1750310286076-117791294_3328774210501539_1773992541902405528_n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310294/museums/1750310287928-117975650_3328774580501502_1046828123410114893_n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310297/museums/1750310291640-118151046_3328774543834839_8985846229408344495_n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310303/museums/1750310295859-118232893_3328773797168247_1919729880245841948_n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310302/museums/1750310298294-118308865_3328774043834889_3882990292913049812_n.png",
+"https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310309/museums/1750310301268-img_0992.png"
 ],
-
-"coverPicture":"https://res.cloudinary.com/dkskx6ntp/image/upload/v1739615543/museums/1739615541798-img_0992.png.png",
+ "coverPicture": "https://res.cloudinary.com/dkskx6ntp/image/upload/v1750310283/museums/1750310273836-9.png",
 "map_embed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27626.687024818755!2d31.19321137431642!3d30.055905399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840e9cd7ea781%3A0xc8a404d934549270!2sRoyal%20Carriages%20Museum!5e0!3m2!1sen!2seg!4v1738851524217!5m2!1sen!2seg' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
 
 }
